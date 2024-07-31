@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/giffff.gif'); /* Replace with the path to your background image */
+    background-repeat: repeat; /* Makes the image repeat */
+    background-size: cover; /* Ensures the image covers the entire background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the main picture and social buttons */
+}
+
+.main-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+    transition: border-color 0.3s, transform 0.3s;
+    overflow: hidden;
+}
+
+.social-button img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.social-button:hover {
+    border-color: green;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
