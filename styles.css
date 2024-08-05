@@ -1,0 +1,60 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    color: rgb(179, 9, 9);
+    background-color: #e8e8e8;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background {
+    background-image: url('images/Progetto\ senza\ titolo\ \(2\).png'); /* Local path to the background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
