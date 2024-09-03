@@ -1,0 +1,122 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/demonic\ nigga.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+/* Overlay for darkening effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    z-index: -1;
+}
+
+/* Social icons styling */
+.socials {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.social-icon img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover img {
+    opacity: 0.8; /* Add hover effect */
+}
+
+/* Content container styling */
+.content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.title {
+    font-family: 'Nosifer', cursive; /* Using Nosifer font */
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
+    animation: scaryAnimation 1.5s infinite, flicker 3s infinite;
+}
+
+@keyframes scaryAnimation {
+    0% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(-5px); }
+}
+
+@keyframes flicker {
+    0% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+    50% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
+    100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+}
+
+.center-image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.center-image {
+    width: 600px; /* Adjust the size as needed */
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.center-image:hover {
+    animation: crazyMove 1s infinite;
+    filter: brightness(50%);
+}
+
+/* Keyframes for crazy movement */
+@keyframes crazyMove {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-20px, 20px) rotate(-10deg); }
+    50% { transform: translate(20px, -20px) rotate(10deg); }
+    75% { transform: translate(-20px, -20px) rotate(-10deg); }
+    100% { transform: translate(20px, 20px) rotate(10deg); }
+}
+
+/* Make the website darker on hover */
+.center-image:hover ~ .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Centering the title and image */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
