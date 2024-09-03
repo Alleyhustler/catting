@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#phone {
+    position: relative;
+    width: 375px; /* Width of the phone frame */
+    height: 667px; /* Height of the phone frame */
+    border: 16px solid #333; /* Phone border color */
+    border-radius: 36px; /* Rounded corners for the phone frame */
+    background-color: #000; /* Phone screen color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for a 3D effect */
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#cat {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
